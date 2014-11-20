@@ -27,10 +27,25 @@
   background-color: black;
 }
 .dog-photo:hover{
-  width: 150px;
-  height: 180px;
+  transform: scale(1.1);
   border-style: solid;
   border-width: 2px;
   border-color: yellow;
   border-radius:25%;
 }
+
+.dog-module {
+  height: 154px;
+  width: 184px;
+  display: inline;
+}
+
+
+
+
+
+
+
+
+
+

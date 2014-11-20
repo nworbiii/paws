@@ -2,7 +2,11 @@
 <!-- <p>Find me in app/views/paws/index.html.erb</p> -->
 
   <% @profile.css("#tblSearchResults td.list-item").each do |dog| %>
-      <%= link_to image_tag dog.css(".list-animal-photo").first["src"], class:"dog-photo" %>
+      
+    <div class="dog-module">
+      <%= link_to "dog?id=#{dog.css('.list-animal-id').text}" do %>
+        <% image_tag dog.css(".list-animal-photo").first["src"], class:"dog-photo" %>
+      <% end %>
       <div class="hidden">
         <h3><%= dog.css(".list-animal-name").text %></h3>
         <%= dog.css(".list-animal-id").text %>
@@ -11,13 +15,18 @@
         <%= dog.css(".list-animal-breed").text %> 
         <%= dog.css(".list-animal-age").text %> 
       </div>
+    </div>
+
+
   <% end %>
       <img class="dog-photo" src="http://images.fanpop.com/images/image_uploads/Zero-nightmare-before-christmas-226972_719_434.jpg">
       <div class="hidden">
         Ghost Dog
-        24117958
+        24227934
         Dog
         ?/Spayed & Neutered
         American Short-Haired Ghost
         70 years 12 months
       </div>
+
+
