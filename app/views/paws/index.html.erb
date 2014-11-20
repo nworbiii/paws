@@ -1,23 +1,23 @@
 <h1>Paws for Miami</h1>
 <!-- <p>Find me in app/views/paws/index.html.erb</p> -->
-<dl>
+
   <% @profile.css("#tblSearchResults td.list-item").each do |dog| %>
-    <% unless dog.css(".list-animal-photo").first.nil? %>
-      <dt><%= image_tag dog.css(".list-animal-photo").first["src"] %>
-      <dt><%= dog.css(".list-animal-name").text %>
-      <dd><%= dog.css(".list-animal-id").text %> 
-      <dd><%= dog.css(".list-anima-species").text %> 
-      <dd><%= dog.css(".list-animal-sexSN").text %> 
-      <dd><%= dog.css(".list-animal-breed").text %> 
-      <dd><%= dog.css(".list-animal-age").text %> 
-    <% else %>
-      <dt><img src="http://images.fanpop.com/images/image_uploads/Zero-nightmare-before-christmas-226972_719_434.jpg" style="width:200px;height:197px;">
-      <dt>Ghost Dog
-      <dd>24117958
-      <dd>Dog
-      <dd>?/Spayed & Neutered
-      <dd>American Short-Haired Ghost
-      <dd>70 years 12 months
-    <% end %>
+      <%= link_to image_tag dog.css(".list-animal-photo").first["src"], class:"dog-photo" %>
+      <div class="hidden">
+        <h3><%= dog.css(".list-animal-name").text %></h3>
+        <%= dog.css(".list-animal-id").text %>
+        <%= dog.css(".list-anima-species").text %> 
+        <%= dog.css(".list-animal-sexSN").text %> 
+        <%= dog.css(".list-animal-breed").text %> 
+        <%= dog.css(".list-animal-age").text %> 
+      </div>
   <% end %>
-</dl>
+      <img class="dog-photo" src="http://images.fanpop.com/images/image_uploads/Zero-nightmare-before-christmas-226972_719_434.jpg">
+      <div class="hidden">
+        Ghost Dog
+        24117958
+        Dog
+        ?/Spayed & Neutered
+        American Short-Haired Ghost
+        70 years 12 months
+      </div>
