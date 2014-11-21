@@ -13,6 +13,70 @@
  *= require_tree .
  *= require_self
  */
+ 
+@import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One);
+@import url(https://fonts.googleapis.com/css?family=Bevan);
+@import url(https://fonts.googleapis.com/css?family=Paytone+One);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+@import url(https://fonts.googleapis.com/css?family=Ek+Mukta:400,800);
+
+body {
+    background-color: #193A59  ;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header, h1{
+  border: 10px solid #002447;
+  background-color: #002447;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0; 
+  left:0;
+  }
+
+h1{
+  font-family:'Raleway', sans-serif;
+  text-shadow: 1px 1px 1px black;
+  margin: 0px;
+  border: 0px;
+  line-height: 90px;
+  padding-left: 4px;
+  padding-bottom: 0px;
+  }
+
+h2{
+  
+}
+
+main {
+  margin-top: 100px;
+  padding-top: 10px;
+}
+
+.nav{
+position: relative;
+  float: right;
+  padding: 0 40px;
+  font-size:140%;
+  font-family:'Raleway', sans-serif;
+  margin: 30px 30px 10px 10px;
+  border: 0px 0px 0px 0px;
+  padding-right: 0px;
+  }
+
+#dog-logo{
+  padding-right: 0px;
+  border-top: 0px;
+  margin-right: 0px;
+}
+
+
  body{
   background-color:gray;
  }
