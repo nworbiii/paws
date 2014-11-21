@@ -11,13 +11,5 @@ class PawsController < ApplicationController
     @profile = Nokogiri::HTML(response)
 
   end
-
-
-
-
-
-
-
-
 end
 

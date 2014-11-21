@@ -101,9 +101,16 @@ position: relative;
   margin-top: 125px;
 }
 
+#tosan {
+  color: white;
+  font-family: Futura;
+  font-weight: lighter;
+}
 
-
-
+.dog {
+  margin-left: 0;
+  padding-left: 0;
+}
 
 
 

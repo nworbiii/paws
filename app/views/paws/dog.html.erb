@@ -5,13 +5,15 @@
     <div class="dog-module">
         <%= image_tag 'http:' + @profile.css("#imgAnimalPhoto").first["src"] %>
       
-      <div style="background: white;">
-        <p><h3><%= @profile.css(".list-animal-name").text %></h3></p>
-        <p><%= @profile.css(".list-animal-id").text %></p>
-        <p>Species<%= @profile.css(".list-anima-species").text %> </p>
-        <p>Sex: <%= @profile.css(".list-animal-sexSN").text %> </p>
+      <div id="tosan">
+        <h3><%= @profile.css("#lbName").text %></h3>
+        <p>ID: <%= @profile.css("#lblID").text %></p>
+        <p>Species: <%= @profile.css("#lblSpecies").text %> </p>
+        <p>Sex: <%= @profile.css("#lbSex").text %> </p>
         <p>Breed: <%= @profile.css("#lbBreed").text %> </p>
         <p>Age: <%= @profile.css("#lbAge").text %> </p>
       </div>
     </div>
+
+
 
