@@ -21,7 +21,7 @@
 @import url(https://fonts.googleapis.com/css?family=Ek+Mukta:400,800);
 
 body {
-    background-color: #193A59  ;
+    background-color: #193A59;
 }
 
 a{
@@ -50,10 +50,6 @@ h1{
   padding-bottom: 0px;
   }
 
-h2{
-  
-}
-
 main {
   margin-top: 100px;
   padding-top: 10px;
@@ -76,10 +72,6 @@ position: relative;
   margin-right: 0px;
 }
 
-
- body{
-  background-color:gray;
- }
 .dog-photo{
   width:120px;
   height:150px;
@@ -87,8 +79,7 @@ position: relative;
   margin:0%;
 }
 
-.container{
-  background-color: black;
+
 }
 .dog-photo:hover{
   transform: scale(1.1);
