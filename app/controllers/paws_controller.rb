@@ -8,7 +8,7 @@ class PawsController < ApplicationController
     @animal_id = params[:id]
     api = "http://www.petango.com/webservices/adoptablesearch/wsAdoptableAnimalDetails.aspx?id=#{@animal_id}"
     response = HTTParty.get(api)
-    @profile = Nokogiri::HTML(response.body)
+    @profile = Nokogiri::HTML(response)
 
   end
 

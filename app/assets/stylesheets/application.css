@@ -24,30 +24,32 @@ body {
     background-color: #193A59;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
 
-header, h1{
+
+header{
   border: 10px solid #002447;
   background-color: #002447;
-  color: white;
   position: fixed;
   width: 100%;
   top: 0; 
   left:0;
-  }
-
-h1{
+}
+header h1{
+  color: white;  
   font-family:'Raleway', sans-serif;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 2px 2px 2px black;
   margin: 0px;
   border: 0px;
   line-height: 90px;
   padding-left: 4px;
   padding-bottom: 0px;
+  font-weight: 900;
+  float: left;  
   }
 
 main {
@@ -80,9 +82,9 @@ position: relative;
 }
 
 
-}
 .dog-photo:hover{
   transform: scale(1.1);
+  -webkit-transform: scale(1.1);
   border-style: solid;
   border-width: 2px;
   border-color: white;{}
@@ -95,7 +97,9 @@ position: relative;
   display: inline;
 }
 
-
+.container{
+  margin-top: 125px;
+}
 
 
 
