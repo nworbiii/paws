@@ -1,17 +1,18 @@
  
-    <% @profile.css("#tblSearchResults td.list-item").each do |dog| %>
-        
-      <div class="dog-module">
-        <%= link_to "dog?id=#{dog.css('.list-animal-id').text}" do %>
-          <% image_tag dog.css(".list-animal-photo").first["src"], class:"dog-photo" %>
-        <% end %>
-        <div class="hidden">
-          <h3><%= dog.css(".list-animal-name").text %></h3>
-          <%= dog.css(".list-animal-id").text %>
-          <%= dog.css(".list-anima-species").text %> 
-          <%= dog.css(".list-animal-sexSN").text %> 
-          <%= dog.css(".list-animal-breed").text %> 
-          <%= dog.css(".list-animal-age").text %> 
-        </div>
+<% @profile.css("#tblSearchResults td.list-item").each do |dog| %>
+  <% unless dog.children.size.zero? %>
+    <div class="dog-module">
+      <%= link_to "dog?id=#{dog.css('.list-animal-id').text}" do %>
+      <% image_tag(dog.css(".list-animal-photo").first["src"], class:"dog-photo")%>
+      <% end %>
+      <div class="hidden">
+        <h3><%= dog.css(".list-animal-name").text %></h3>
+        <%= dog.css(".list-animal-id").text %>
+        <%= dog.css(".list-anima-species").text %> 
+        <%= dog.css(".list-animal-sexSN").text %> 
+        <%= dog.css(".list-animal-breed").text %> 
+        <%= dog.css(".list-animal-age").text %> 
       </div>
-          <% end %>
+    </div>
+  <% end %>
+<% end %>
