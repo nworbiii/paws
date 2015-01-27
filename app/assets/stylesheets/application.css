@@ -21,7 +21,7 @@
 @import url(//fonts.googleapis.com/css?family=Ek+Mukta:400,800);
 
 body {
-    background-color: #193A59;
+    background-color: #193A59 !important;
 }
 
 a {
